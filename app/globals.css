@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonty (Geist via next/font) */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  /* Tło — głęboki granat */
+  --color-night: #0a0f1f;
+  --color-night-2: #0b1120;
+  --color-card: #131d39;
+  --color-card-2: #18254a;
+  --color-border: rgba(255, 255, 255, 0.14);
+
+  /* Akcent główny — jasny niebieski */
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+
+  /* Akcent rekomendowanego pakietu — złoto/bursztyn */
+  --color-gold-300: #fcd97a;
+  --color-gold-400: #f5c451;
+  --color-gold-500: #e0a92e;
+
+  /* Tekst */
+  --color-ink: #eef2fa;
+  --color-ink-muted: #c2ccdc;
+  --color-ink-faint: #97a4b8;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  background-color: var(--color-night);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Subtelne tło z poświatą granat→indygo */
+.bg-aurora {
+  background:
+    radial-gradient(60% 50% at 50% 0%, rgba(59, 130, 246, 0.16) 0%, transparent 70%),
+    radial-gradient(40% 40% at 85% 10%, rgba(99, 102, 241, 0.12) 0%, transparent 70%),
+    var(--color-night);
+}
+
+/* Karta szklana */
+.glass {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(8px);
+}
+
+/* Cienki separator gradientowy */
+.hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12), transparent);
+}
+
+/* Tekst z gradientem akcentu */
+.text-gradient-brand {
+  background: linear-gradient(120deg, var(--color-brand-300), var(--color-brand-500));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(120deg, var(--color-gold-300), var(--color-gold-500));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Ukrycie scrollbara w poziomych listach mobilnych */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
