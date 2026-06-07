@@ -23,7 +23,7 @@ export function HowItWorks() {
         <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((step, i) => (
             <Reveal key={step.index} delay={(i % 4) * 0.08} className="h-full">
-              <div className="flex h-full flex-col gap-4 bg-night p-6">
+              <div className="flex h-full flex-col gap-4 bg-night p-6 transition-colors duration-300 hover:bg-night-2">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-500/10 font-mono text-lg font-bold text-brand-300">
                   {step.index}
                 </span>

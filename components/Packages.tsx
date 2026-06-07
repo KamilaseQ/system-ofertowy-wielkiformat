@@ -4,6 +4,7 @@ import { useState } from "react";
 import { PACKAGES, type Package } from "@/lib/data";
 import { PackageCard } from "@/components/PackageCard";
 import { PackageDetail } from "@/components/PackageDetail";
+import { ComparisonTable } from "@/components/ComparisonTable";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
 
@@ -37,6 +38,10 @@ export function Packages() {
           </Reveal>
         ))}
       </div>
+
+      <Reveal delay={0.05} className="mt-14">
+        <ComparisonTable />
+      </Reveal>
 
       <PackageDetail pkg={active} open={open} onOpenChange={setOpen} />
     </section>

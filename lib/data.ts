@@ -82,27 +82,27 @@ export const PAIN_CONCLUSION = {
 export const STEPS: Step[] = [
   {
     index: 1,
-    title: "Aktualne dane po Waszej stronie",
+    title: "Zawsze aktualna lista nośników",
     description:
-      "System sam pobiera dane z web serwisu (billboard_data) — zamiast ręcznie wgrywanego pliku XML. Lista nośników jest zawsze świeża, bez Waszej pracy.",
+      "Oferta nośników na stronie odświeża się sama. To, co widzi klient, jest aktualne — bez Waszej ręcznej pracy.",
   },
   {
     index: 2,
     title: "Koszyk na liście nośników",
     description:
-      "Odwiedzający zaznacza interesujące go nośniki — „dodaj do koszyka” — na Waszej istniejącej liście i mapie nośników.",
+      "Odwiedzający zaznacza interesujące go nośniki i dodaje je do koszyka — tak jak w sklepie internetowym.",
   },
   {
     index: 3,
     title: "Zapytanie jednym kliknięciem",
     description:
-      "Wypełnia krótki formularz: imię, telefon, e-mail, termin kampanii i opcjonalny opis — i wysyła całą listę nośników naraz.",
+      "Wypełnia krótki formularz — imię, telefon, e-mail, termin i opis — i wysyła całą listę naraz.",
   },
   {
     index: 4,
-    title: "Lead w jednym miejscu",
+    title: "Gotowy lead u Was",
     description:
-      "Dostajecie gotowe zapytanie z listą nośników i kontaktem. Wszystko w jednym miejscu, gotowe do przeniesienia do Waszej bazy.",
+      "Dostajecie komplet: listę nośników i dane kontaktowe. Każde zapytanie to lead gotowy do rozmowy.",
   },
 ];
 
@@ -128,16 +128,8 @@ export const BENEFITS: Benefit[] = [
     text: "Koniec kartek, SMS-ów i maili w różnych skrzynkach. Jeden format, gotowy do przeniesienia do bazy.",
   },
   {
-    title: "Dobre pierwsze wrażenie",
-    text: "Klient dostaje czytelne podsumowanie swojego zapytania zamiast zwykłego „oddzwonimy”.",
-  },
-  {
     title: "Działa całą dobę",
     text: "Zapytania spływają też po godzinach, w weekendy i święta — bez Waszego udziału.",
-  },
-  {
-    title: "Fundament już jest",
-    text: "Macie stronę, listę nośników i klientów. Dokładamy warstwę, która zbiera zainteresowanie.",
   },
 ];
 
@@ -154,19 +146,18 @@ export const PACKAGES: Package[] = [
     timeline: "~30 dni",
     goal: "Odwiedzający sam składa listę nośników i wysyła gotowe zapytanie o dostępność i wycenę.",
     highlights: [
-      "Automatyczne dane nośników (z kopią zapasową)",
-      "Koszyk: zaznaczasz nośniki, licznik, lista",
+      "Zawsze aktualna lista nośników",
+      "Koszyk: klient zaznacza nośniki i widzi swoją listę",
       "Formularz: imię, telefon, e-mail, termin, opis",
-      "Zapytanie mailem + autoodpowiedź dla klienta",
+      "Zapytanie mailem + potwierdzenie dla klienta",
     ],
     scope: [
-      "Połączenie strony z web serwisem nośników (billboard_data) — automatyczne pobieranie danych po Waszej stronie, zamiast ręcznie wgrywanego pliku XML",
-      "Kopia zapasowa danych, żeby lista nośników działała nawet gdy web serwis chwilowo nie odpowiada",
-      "Koszyk na istniejącej liście i mapie nośników: zaznaczanie, licznik, lista (zapamiętana w przeglądarce)",
+      "Lista nośników na stronie zawsze aktualna — odświeża się sama, bez ręcznej pracy po Waszej stronie",
+      "Koszyk na liście nośników: klient zaznacza nośniki, widzi licznik i swoją listę",
       "Formularz zapytania: imię, telefon, e-mail (wymagane), termin kampanii i krótki opis (opcjonalnie)",
-      "Po wysłaniu: e-mail do firmy z listą wybranych nośników + automatyczna odpowiedź do klienta z podsumowaniem",
-      "Zabezpieczenie formularza i zgody spójne z tym, co już macie na stronie",
-      "Testy, dopasowanie do telefonów i tabletów, wdrożenie",
+      "Po wysłaniu: zapytanie z listą nośników trafia do Was mailem, a klient dostaje automatyczne potwierdzenie z podsumowaniem",
+      "Zgody i zabezpieczenie formularza spójne z resztą Waszej strony",
+      "Dopasowanie do telefonów i tabletów, testy i wdrożenie",
     ],
     supports: [
       {
@@ -197,21 +188,21 @@ export const PACKAGES: Package[] = [
     buildsOn: "Wszystko z Pakietu 1, plus:",
     highlights: [
       "Ekspres — wdrożenie poniżej 10 dni roboczych",
-      "Udostępnianie koszyka linkiem — odbiorcy wymieniają się listami",
-      "Generowanie oferty w PDF — dla tych, którzy wolą plik",
-      "Leady w jednym pliku (Excel / Google Sheets) — gotowe do bazy",
-      "Dopracowany układ koszyka: miniatury, animacje, łatwa edycja",
-      "Dopracowany e-mail z miniaturami + brandowana autoodpowiedź",
-      "Częstsze, automatyczne odświeżanie danych nośników",
+      "Udostępnianie koszyka linkiem — łatwiej domknąć decyzję",
+      "Oferta w PDF — gotowy dokument do wysłania",
+      "Wszystkie leady w jednym pliku — gotowe do bazy",
+      "Rozbudowany, intuicyjny koszyk z podglądami nośników",
+      "Brandowany e-mail zapytania + firmowa autoodpowiedź",
+      "Lista nośników odświeżana częściej",
     ],
     scope: [
-      "Ekspresowa realizacja — poniżej 10 dni roboczych. Priorytet w kolejce, żeby system zaczął zbierać zapytania jak najszybciej.",
-      "Udostępnianie koszyka linkiem. Odbiorca składa listę nośników i wysyła ją jednym linkiem — współpracownikowi, przełożonemu, klientowi. Osoby, które wspólnie decydują o rezerwacji, nie muszą niczego opisywać w mailu. Mniej tarcia po ich stronie to więcej dokończonych zapytań po Waszej.",
-      "Generowanie oferty w PDF. Lista wybranych nośników jako gotowy, estetyczny plik — dla klientów, którzy wolą załącznik od linku. Wygląda profesjonalnie i można go od razu przesłać dalej.",
-      "Leady w jednym pliku (Excel / Google Sheets). Każde zapytanie ląduje w jednej tabeli z kompletem danych — koniec przepisywania z kartek i maili. Jeśli Wasza baza pozwala wgrać plik, przeniesienie leadów to chwila.",
-      "Dopracowany układ koszyka — miniatury nośników, płynne animacje, łatwe dodawanie i usuwanie pozycji. Wygodniej się wybiera, więc klienci składają dłuższe listy.",
-      "Dopracowany e-mail zapytania z miniaturami nośników i terminem kampanii oraz brandowana automatyczna odpowiedź. Pierwszy kontakt wygląda jak od dużego, poukładanego operatora.",
-      "Częstsze, automatyczne odświeżanie danych nośników — lista trzyma się bliżej aktualnego stanu feedu.",
+      "Ekspresowe wdrożenie — poniżej 10 dni roboczych. Priorytet, żeby system zaczął przynosić zapytania jak najszybciej.",
+      "Udostępnianie koszyka linkiem. Klient wysyła swoją listę nośników jednym linkiem — współpracownikowi, przełożonemu, znajomemu. Osoby, które wspólnie decydują o kampanii, nie muszą niczego opisywać. Mniej tarcia po ich stronie to więcej domkniętych zapytań po Waszej.",
+      "Oferta w PDF. Lista wybranych nośników jako gotowy, profesjonalny dokument — dla klientów, którzy wolą plik od linku. Można go od razu przesłać dalej.",
+      "Wszystkie leady w jednym pliku (Excel / Google Sheets). Każde zapytanie ląduje w jednej tabeli z kompletem danych — koniec przepisywania z kartek i maili, wszystko gotowe do przeniesienia do Waszej bazy.",
+      "Rozbudowany, intuicyjny koszyk — podglądy nośników, płynne działanie, łatwe dodawanie i usuwanie pozycji. Wygodniej się wybiera, więc klienci składają dłuższe listy.",
+      "Brandowany e-mail zapytania z podglądami nośników i terminem kampanii oraz firmowa automatyczna odpowiedź. Pierwszy kontakt wygląda jak od dużego, poukładanego operatora.",
+      "Lista nośników odświeżana częściej — klient zawsze widzi aktualną ofertę.",
       "Pełne testy (telefony, tablety, sytuacje brzegowe) i wdrożenie.",
     ],
     supports: [
@@ -236,6 +227,34 @@ export const PACKAGES: Package[] = [
       "Mniej Waszej pracy na każdym etapie — od zapytania po gotowy plik z leadami, a to wszystko w intuicyjnej formie zarówno dla Was, jak i dla klientów.",
     accent: "gold",
   },
+];
+
+// ── Porównanie pakietów ────────────────────────────────────────────────────────
+
+/** true = jest, false = brak, string = wartość/opis */
+export type CompareValue = boolean | string;
+
+export interface CompareRow {
+  label: string;
+  p1: CompareValue;
+  p2: CompareValue;
+}
+
+export const COMPARE_HEADERS = {
+  p1: { name: "Koszyk i zapytania", price: "7 000 zł" },
+  p2: { name: "Rozszerzony", price: "13 000 zł" },
+};
+
+export const COMPARISON: CompareRow[] = [
+  { label: "Koszyk i wysyłka zapytań", p1: true, p2: true },
+  { label: "Zawsze aktualna lista nośników", p1: true, p2: true },
+  { label: "Zapytanie mailem + potwierdzenie dla klienta", p1: true, p2: true },
+  { label: "Czas wdrożenia", p1: "~30 dni", p2: "poniżej 10 dni roboczych" },
+  { label: "Udostępnianie koszyka linkiem", p1: false, p2: true },
+  { label: "Oferta gotowa w PDF", p1: false, p2: true },
+  { label: "Wszystkie leady w jednym pliku", p1: false, p2: true },
+  { label: "Rozbudowany, intuicyjny koszyk", p1: "podstawowy", p2: "rozbudowany" },
+  { label: "Brandowany e-mail z podglądami nośników", p1: false, p2: true },
 ];
 
 // ── Utrzymanie (opcjonalnie) ──────────────────────────────────────────────────

@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/reveal";
 
 export function Benefits() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20 sm:py-28">
+    <section className="mx-auto max-w-4xl px-6 py-20 sm:py-28">
       <Reveal>
         <SectionHeading
           eyebrow="Korzyści"
@@ -14,10 +14,10 @@ export function Benefits() {
         />
       </Reveal>
 
-      <div className="mt-12 grid auto-rows-fr gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid auto-rows-fr gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
         {BENEFITS.map((benefit, i) => (
-          <Reveal key={benefit.title} delay={(i % 3) * 0.06} className="h-full">
-            <div className="flex h-full flex-col gap-3 bg-night p-6">
+          <Reveal key={benefit.title} delay={(i % 2) * 0.06} className="h-full">
+            <div className="flex h-full flex-col gap-3 bg-night p-6 transition-colors duration-300 hover:bg-night-2">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-500/10 text-brand-400">
                 <Check className="h-5 w-5" />
               </span>

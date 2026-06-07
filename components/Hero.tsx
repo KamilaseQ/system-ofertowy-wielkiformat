@@ -48,10 +48,10 @@ export function Hero() {
           custom={2}
           className="mt-7 max-w-2xl text-lg leading-relaxed text-ink-muted sm:text-xl"
         >
-          Kolejne wdrożenie dla Waszej strony: automatyczne aktualizowanie danych
-          nośników po Waszej stronie, koszyk do zaznaczania nośników i gotowe
-          zapytania o dostępność i wycenę — z kompletem danych kontaktowych. Koniec
-          z ręcznym układaniem oferty i przepisywaniem leadów.
+          Kolejne wdrożenie dla Waszej strony: odwiedzający sam składa listę
+          interesujących go nośników i wysyła gotowe zapytanie o dostępność i wycenę —
+          z kompletem danych kontaktowych. Koniec z ręcznym układaniem oferty
+          i przepisywaniem leadów.
         </motion.p>
 
         <motion.div

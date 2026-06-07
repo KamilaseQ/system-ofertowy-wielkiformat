@@ -15,10 +15,10 @@ export function PackageCard({ pkg, onOpen }: PackageCardProps) {
   return (
     <div
       className={cn(
-        "relative flex flex-col rounded-2xl border p-7 transition",
+        "relative flex flex-col rounded-2xl border p-7 transition-all duration-300 hover:-translate-y-1",
         isGold
-          ? "border-gold-500/50 bg-gradient-to-b from-gold-500/[0.06] to-transparent"
-          : "border-border bg-gradient-to-b from-white/[0.035] to-transparent hover:border-white/20",
+          ? "border-gold-500/50 bg-gradient-to-b from-gold-500/[0.06] to-transparent hover:shadow-2xl hover:shadow-gold-500/10"
+          : "border-border bg-gradient-to-b from-white/[0.035] to-transparent hover:border-white/20 hover:shadow-xl hover:shadow-black/20",
       )}
     >
       <div className="mb-1 text-xs font-semibold uppercase tracking-widest text-ink-faint">
