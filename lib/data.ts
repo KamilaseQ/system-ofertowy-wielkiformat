@@ -255,21 +255,21 @@ export const COMPARISON: CompareRow[] = [
   { label: "Brandowany e-mail z podglądami nośników", p1: false, p2: true },
 ];
 
-// ── Utrzymanie (opcjonalnie) ──────────────────────────────────────────────────
+// ── Utrzymanie ────────────────────────────────────────────────────────────────
 
 export const MAINTENANCE = {
   price: "950 zł",
   priceNote: "/ mies.",
-  eyebrow: "Opieka po wdrożeniu",
-  title: "Opcjonalne utrzymanie — bez myślenia o tym",
+  eyebrow: "Stała opieka",
+  title: "Utrzymanie — system pod naszą opieką",
   perks: [
     "Dane regularnie aktualizowane — pilnujemy tego za Was",
-    "Stała opieka nad integracją z zewnętrznym źródłem danych — jego administrator pracuje niezależnie od nas, więc gdy po jego stronie coś się zmieni, jesteśmy gotowi to obsłużyć",
+    "Stała opieka nad integracją z zewnętrznym źródłem danych — jego administrator działa niezależnie od nas, więc gdy po jego stronie coś się zmieni, dostosowujemy system, zanim odbije się to na Waszej ofercie",
     "Coś przestanie działać — naprawiamy natychmiast",
     "Drobne zmiany w treści i formularzu w cenie",
     "Priorytetowy kontakt — reagujemy od ręki",
   ],
-  note: "Trochę jak ubezpieczenie: płacicie za gotowość do reakcji, nie za naprawy. Opcjonalnie — system działa też bez tego.",
+  note: "System codziennie pobiera dane z zewnętrznego źródła i działa bez przerwy — stała opieka utrzymuje go w pełnej sprawności. Wy zajmujecie się klientami, technologię zostawiacie nam.",
 };
 
 // ── Kontakt ──────────────────────────────────────────────────────────────────
