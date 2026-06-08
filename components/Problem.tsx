@@ -13,7 +13,7 @@ export function Problem() {
       <Reveal>
         <SectionHeading
           eyebrow="Problem"
-          title="Ręczne układanie oferty zjada czas — a leady trafiają to na kartkę, to w mail."
+          title="Ręczne układanie oferty zjada czas, a dane o kliencie wywołują chaos."
           subtitle="Składanie listy nośników nie zajmuje godzin, ale powtarza się przy każdym zapytaniu. A dane klienta i tak trzeba potem ręcznie przepisać do bazy."
         />
       </Reveal>

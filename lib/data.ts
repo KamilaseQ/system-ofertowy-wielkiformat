@@ -60,7 +60,7 @@ export const PAIN_POINTS: PainPoint[] = [
       "Przy każdym zapytaniu ktoś zestawia listę nośników. To kilka minut — ale wraca przy każdym kliencie, codziennie.",
   },
   {
-    title: "Lead na kartce albo w mailu",
+    title: "Lead w mailu albo luźnej notatce",
     description:
       "Raz notatka po telefonie, raz mail, raz SMS. Zanim trafi do bazy, łatwo coś przeoczyć albo zgubić.",
   },
@@ -82,7 +82,7 @@ export const PAIN_CONCLUSION = {
 export const STEPS: Step[] = [
   {
     index: 1,
-    title: "Zawsze aktualna lista nośników",
+    title: "Regularnie aktualizowana lista nośników",
     description:
       "Oferta nośników na stronie odświeża się sama. To, co widzi klient, jest aktualne — bez Waszej ręcznej pracy.",
   },
@@ -125,7 +125,7 @@ export const BENEFITS: Benefit[] = [
   },
   {
     title: "Wszystko w jednym miejscu",
-    text: "Koniec kartek, SMS-ów i maili w różnych skrzynkach. Jeden format, gotowy do przeniesienia do bazy.",
+    text: "Koniec luźnych notatek, SMS-ów i maili w różnych skrzynkach. Jeden format, gotowy do przeniesienia do bazy.",
   },
   {
     title: "Działa całą dobę",
@@ -146,13 +146,13 @@ export const PACKAGES: Package[] = [
     timeline: "~30 dni",
     goal: "Odwiedzający sam składa listę nośników i wysyła gotowe zapytanie o dostępność i wycenę.",
     highlights: [
-      "Zawsze aktualna lista nośników",
+      "Regularnie aktualizowana lista nośników",
       "Koszyk: klient zaznacza nośniki i widzi swoją listę",
       "Formularz: imię, telefon, e-mail, termin, opis",
       "Zapytanie mailem + potwierdzenie dla klienta",
     ],
     scope: [
-      "Lista nośników na stronie zawsze aktualna — odświeża się sama, bez ręcznej pracy po Waszej stronie",
+      "Lista nośników na stronie regularnie aktualizowana — odświeża się sama, bez ręcznej pracy po Waszej stronie",
       "Koszyk na liście nośników: klient zaznacza nośniki, widzi licznik i swoją listę",
       "Formularz zapytania: imię, telefon, e-mail (wymagane), termin kampanii i krótki opis (opcjonalnie)",
       "Po wysłaniu: zapytanie z listą nośników trafia do Was mailem, a klient dostaje automatyczne potwierdzenie z podsumowaniem",
@@ -193,16 +193,14 @@ export const PACKAGES: Package[] = [
       "Wszystkie leady w jednym pliku — gotowe do bazy",
       "Rozbudowany, intuicyjny koszyk z podglądami nośników",
       "Brandowany e-mail zapytania + firmowa autoodpowiedź",
-      "Lista nośników odświeżana częściej",
     ],
     scope: [
       "Ekspresowe wdrożenie — poniżej 10 dni roboczych. Priorytet, żeby system zaczął przynosić zapytania jak najszybciej.",
       "Udostępnianie koszyka linkiem. Klient wysyła swoją listę nośników jednym linkiem — współpracownikowi, przełożonemu, znajomemu. Osoby, które wspólnie decydują o kampanii, nie muszą niczego opisywać. Mniej tarcia po ich stronie to więcej domkniętych zapytań po Waszej.",
       "Oferta w PDF. Lista wybranych nośników jako gotowy, profesjonalny dokument — dla klientów, którzy wolą plik od linku. Można go od razu przesłać dalej.",
-      "Wszystkie leady w jednym pliku (Excel / Google Sheets). Każde zapytanie ląduje w jednej tabeli z kompletem danych — koniec przepisywania z kartek i maili, wszystko gotowe do przeniesienia do Waszej bazy.",
+      "Wszystkie leady w jednym pliku (Excel / Google Sheets). Każde zapytanie ląduje w jednej tabeli z kompletem danych — koniec przepisywania z luźnych notatek i maili, wszystko gotowe do przeniesienia do Waszej bazy.",
       "Rozbudowany, intuicyjny koszyk — podglądy nośników, płynne działanie, łatwe dodawanie i usuwanie pozycji. Wygodniej się wybiera, więc klienci składają dłuższe listy.",
       "Brandowany e-mail zapytania z podglądami nośników i terminem kampanii oraz firmowa automatyczna odpowiedź. Pierwszy kontakt wygląda jak od dużego, poukładanego operatora.",
-      "Lista nośników odświeżana częściej — klient zawsze widzi aktualną ofertę.",
       "Pełne testy (telefony, tablety, sytuacje brzegowe) i wdrożenie.",
     ],
     supports: [
@@ -216,7 +214,7 @@ export const PACKAGES: Package[] = [
       },
       {
         title: "Leady gotowe do działania",
-        text: "Wszyscy zainteresowani w jednej tabeli, w jednym formacie. Zamiast przepisywać dane z kartek i maili, możecie od razu dzwonić i robić follow-up.",
+        text: "Wszyscy zainteresowani w jednej tabeli, w jednym formacie. Zamiast przepisywać dane z luźnych notatek i maili, możecie od razu dzwonić i robić follow-up.",
       },
       {
         title: "Profesjonalny wizerunek na starcie",
@@ -247,7 +245,7 @@ export const COMPARE_HEADERS = {
 
 export const COMPARISON: CompareRow[] = [
   { label: "Koszyk i wysyłka zapytań", p1: true, p2: true },
-  { label: "Zawsze aktualna lista nośników", p1: true, p2: true },
+  { label: "Regularnie aktualizowana lista nośników", p1: true, p2: true },
   { label: "Zapytanie mailem + potwierdzenie dla klienta", p1: true, p2: true },
   { label: "Czas wdrożenia", p1: "~30 dni", p2: "poniżej 10 dni roboczych" },
   { label: "Udostępnianie koszyka linkiem", p1: false, p2: true },
@@ -265,12 +263,13 @@ export const MAINTENANCE = {
   eyebrow: "Opieka po wdrożeniu",
   title: "Opcjonalne utrzymanie — bez myślenia o tym",
   perks: [
-    "Dane zawsze aktualne — pilnujemy tego za Was",
+    "Dane regularnie aktualizowane — pilnujemy tego za Was",
+    "Stała opieka nad integracją z zewnętrznym źródłem danych — jego administrator pracuje niezależnie od nas, więc gdy po jego stronie coś się zmieni, jesteśmy gotowi to obsłużyć",
     "Coś przestanie działać — naprawiamy natychmiast",
     "Drobne zmiany w treści i formularzu w cenie",
     "Priorytetowy kontakt — reagujemy od ręki",
   ],
-  note: "Opcjonalnie. System działa też bez tego — to wygoda, nie warunek.",
+  note: "Trochę jak ubezpieczenie: płacicie za gotowość do reakcji, nie za naprawy. Opcjonalnie — system działa też bez tego.",
 };
 
 // ── Kontakt ──────────────────────────────────────────────────────────────────
